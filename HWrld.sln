@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWrldSrvc", "HWrldSrvc\HWrldSrvc.csproj", "{DDAE2130-29CB-4EA2-ACD2-874E4A2A83D7}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HostDevServer", "HostDevServer\", "{A6D7DB61-A7CF-4F09-9546-ABC11BCF30F6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{ddae2130-29cb-4ea2-acd2-874e4a2a83d7}|HWrldSrvc.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/HostDevServer"
+		Debug.AspNetCompiler.PhysicalPath = "HostDevServer\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\HostDevServer\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/HostDevServer"
+		Release.AspNetCompiler.PhysicalPath = "HostDevServer\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\HostDevServer\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7860"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWrldClient", "HWrldClient\HWrldClient.csproj", "{EC3806D5-9FBF-4FED-8019-F3ED0B758F08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostIIS", "HostIIS", "{645C9865-6B6A-45A6-906F-211CD92D2EF6}"
+	ProjectSection(SolutionItems) = preProject
+		HostIIS\Web.config = HostIIS\Web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{A3180DC1-B469-4095-955A-751764E53558}"
+	ProjectSection(SolutionItems) = preProject
+		HostIIS\bin\HWrldSrvc.dll = HostIIS\bin\HWrldSrvc.dll
+		HostIIS\bin\HWrldSrvc.pdb = HostIIS\bin\HWrldSrvc.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostIISTcp", "HostIISTcp", "{E569C391-394B-4C6E-B1A6-A411592D6C87}"
+	ProjectSection(SolutionItems) = preProject
+		HostIISTcp\Web.config = HostIISTcp\Web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{C9D327ED-FDDA-4B07-BE66-65996CCAAA13}"
+	ProjectSection(SolutionItems) = preProject
+		HostIISTcp\bin\HWrldSrvc.dll = HostIISTcp\bin\HWrldSrvc.dll
+		HostIISTcp\bin\HWrldSrvc.pdb = HostIISTcp\bin\HWrldSrvc.pdb
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWrldClientTcp", "HWrldClientTcp\HWrldClientTcp.csproj", "{09334337-A4CE-4EB2-B4A5-8043DB5A70BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDAE2130-29CB-4EA2-ACD2-874E4A2A83D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAE2130-29CB-4EA2-ACD2-874E4A2A83D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAE2130-29CB-4EA2-ACD2-874E4A2A83D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAE2130-29CB-4EA2-ACD2-874E4A2A83D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D7DB61-A7CF-4F09-9546-ABC11BCF30F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D7DB61-A7CF-4F09-9546-ABC11BCF30F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D7DB61-A7CF-4F09-9546-ABC11BCF30F6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D7DB61-A7CF-4F09-9546-ABC11BCF30F6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EC3806D5-9FBF-4FED-8019-F3ED0B758F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3806D5-9FBF-4FED-8019-F3ED0B758F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3806D5-9FBF-4FED-8019-F3ED0B758F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3806D5-9FBF-4FED-8019-F3ED0B758F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09334337-A4CE-4EB2-B4A5-8043DB5A70BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09334337-A4CE-4EB2-B4A5-8043DB5A70BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09334337-A4CE-4EB2-B4A5-8043DB5A70BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09334337-A4CE-4EB2-B4A5-8043DB5A70BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3180DC1-B469-4095-955A-751764E53558} = {645C9865-6B6A-45A6-906F-211CD92D2EF6}
+		{C9D327ED-FDDA-4B07-BE66-65996CCAAA13} = {E569C391-394B-4C6E-B1A6-A411592D6C87}
+	EndGlobalSection
+EndGlobal
